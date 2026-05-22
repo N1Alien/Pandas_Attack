@@ -27,13 +27,13 @@ print()
 # change column names to capitalized
 df.columns = df.columns.str.title()
 print("Column names capitalized:")
-print(df[:1])
+print(df.head(1))
 print()
 
 # drop the 'Max Poz' column
 df = df.drop(columns=['Max Poz'])
 print("Column 'Max Poz' dropped:")
-print(df[:1])
+print(df.head(1))
 print()
 
 # year or years with the most albums released
